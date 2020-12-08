@@ -1,0 +1,40 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Oblique;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11700\viewh9600\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf0 A Minimum Spanning Tree is a subgraph where sum of the weight of all the edges is the smallest compared to all possible spanning trees in a graph. When analyzing a graph in order to build a spanning tree, we are looking to find the most cost efficient way to add all vertices to the tree while avoiding the creation of a cycle. In order to achieve this, we have been introduced to two very well-known algorithms: Prim\'92s Algorithm and Kruskal\'92s Algorithm.\
+\
+Where we grow a spanning tree using Prim\'92s Algorithm, a spanning tree is actually built using Kruskal\'92s Algorithm. Both algorithms, however, are considered greedy as their purpose is to find the most efficient, cost-effective routes. With Kruskal\'92s algorithm we begin by sorting \'93the graph edges with respect to their weights.\'94 (Hackerearth, 2020). Keeping in mind again, we must be aware that the edges being added to the tree do not create a cycle, since spanning trees are acyclic. A divide-and-conquer approach would have us further break down this process by creating \'93forests\'94 of vertices. We would then begin merging them one by one \'96 according their edge weight, lowest to highest \'96 until we have our MST.\
+\
+Hackerearth provides a very straightforward example of how Kruskal\'92s algorithm works:\
+\
+\
+\
+E = (\{a, b\} \{d, e\} \{b, e\} \{b, c\})\
+\
+Forest:\
+\{a\}, \{b\}, \{c\}, \{d\}, \{e\}\
+\
+Merging process by lowest edge weight:\
+\{a, b\} \{c\} \{d\} \{e\}\
+\{a, b, d\} \{c\} \{e\}\
+\{a, b, d, e\} \{c\}\
+\{a, b, d, e, c\}\
+\
+As a result of the above process, we end up with a MST where the vertices are in the following order:\
+\{a, b, d, e, c\}\
+\
+\
+\
+References:\
+\
+Taipala, D. (2013, September 22). 
+\f1\i CSS3304 Analysis of Algorithms Unit 4 Lecture 3
+\f0\i0  [Video File]. YouTube. https://youtu.be/6IMwm3aQg-4\
+\
+Hackerearth. (2020). Minimum Spanning Tree. Retrieved from https://www.hackerearth.com/practice/algorithms/graphs/minimum-spanning-tree/tutorial/\
+\
+}
